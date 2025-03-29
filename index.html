@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Export-Import Jobs | JobDekho.com</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#" class="logo">Job<span>Dekho.com</span></a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#job">Jobs</a></li>
+        <li><button class="btn" id="login-btn">Login</button></li>
+        <li><button class="btn" id="signup-btn">Signup</button></li>
+      </ul>
+    </nav>
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" id="close-login">&times;</span>
+        <h2>Login</h2>
+        <form>
+          <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="Password" required />
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div id="signup-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" id="close-signup">&times;</span>
+        <h2>Signup</h2>
+        <form>
+          <input type="text" placeholder="Username" required />
+          <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="Password" required />
+          <button type="submit">Signup</button>
+        </form>
+      </div>
+    </div>
+
+    <header class="section__container header__container" id="home">
+      <img src="assets/Dhl.png" alt="header" />
+      <img src="assets/Kuehne + Nagel.png" alt="header" />
+      <img src="assets/maersk.png" alt="header" />
+      <img src="assets/Dhl.png" alt="header" />
+      <img src="assets/Kuehne + Nagel.png" alt="header" />
+      <img src="assets/maersk.png" alt="header" />
+      <h2>
+        <img src="assets/bag.png" alt="bag" />
+        No.1 Job Website
+      </h2>
+      <h1>Search, Apply &<br />Get Your <span>Dream Job</span></h1>
+      <p>
+        Your future starts here. Discover countless opportunities, take action
+        by applying to jobs that match your skills and aspirations, and
+        transform your career.
+      </p>
+      <div class="header__btns">
+        <button class="btn"><a href="#job"> Browse Jobs</a></button>
+      </div>
+    </header>
+
+    <section class="steps" id="about">
+      <div class="section__container steps__container">
+        <h2 class="section__header">
+          Get Hired in 4 <span>Quick Easy Steps</span>
+        </h2>
+        <p class="section__description">
+          Follow Our Simple, Step-by-Step Guide to Quickly Land Your Dream Job
+          and Start Your New Career Journey.
+        </p>
+        <div class="steps__grid">
+          <div class="steps__card">
+            <span><i class="ri-user-fill"></i></span>
+            <h4>Create an Account</h4>
+            <p>
+              Sign up with just a few clicks to unlock exclusive access to a
+              world of job opportunities and landing your dream job. It's quick,
+              easy, and completely free.
+            </p>
+          </div>
+          <div class="steps__card">
+            <span><i class="ri-search-fill"></i></span>
+            <h4>Search Job</h4>
+            <p>
+              Dive into our job database tailored to match your skills and
+              preferences. With our advanced search filters, finding the perfect
+              job has never been easier.
+            </p>
+          </div>
+          <div class="steps__card">
+            <span><i class="ri-file-paper-fill"></i></span>
+            <h4>Upload CV/Resume</h4>
+            <p>
+              Showcase your experience by uploading your CV or resume. Let
+              employers know why you're the perfect candidate for their job
+              openings.
+            </p>
+          </div>
+          <div class="steps__card">
+            <span><i class="ri-briefcase-fill"></i></span>
+            <h4>Get Job</h4>
+            <p>
+              Take the final step towards your new career. Get ready to embark
+              on your professional journey and secure the job you've been
+              dreaming of.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container explore__container">
+      <h2 class="section__header">
+        <span>Countless Career Options</span> Are Waiting For You To Explore
+      </h2>
+      <p class="section__description">
+        Discover a World of Exciting Opportunities and Endless Possibilities,
+        and Find the Perfect Career Path to Shape Your Future.
+      </p>
+      <div class="explore__grid">
+        <div class="explore__card">
+          <span><i class="ri-pencil-ruler-2-fill"></i></span>
+          <h4>Logistics Manager</h4>
+          <p>200+ jobs openings</p>
+        </div>
+        <div class="explore__card">
+          <span><i class="ri-bar-chart-box-fill"></i></span>
+          <h4>Export Coordinator</h4>
+          <p>350+ jobs openings</p>
+        </div>
+        <div class="explore__card">
+          <span><i class="ri-megaphone-fill"></i></span>
+          <h4>Freight Forwarding Agent</h4>
+          <p>500+ jobs openings</p>
+        </div>
+        <div class="explore__card">
+          <span><i class="ri-wallet-3-fill"></i></span>
+          <h4>Customs Clearance Officer</h4>
+          <p>200+ jobs openings</p>
+        </div>
+        <div class="explore__card">
+          <span><i class="ri-car-fill"></i></span>
+          <h4>Warehouse Staff</h4>
+          <p>250+ jobs openings</p>
+        </div>
+        <div class="explore__card">
+          <span><i class="ri-truck-fill"></i></span>
+          <h4>Supply Chain Manager</h4>
+          <p>1k+ jobs openings</p>
+        </div>
+        <div class="explore__card">
+          <span><i class="ri-computer-fill"></i></span>
+          <h4>International Marketing Executive</h4>
+          <p>100+ jobs openings</p>
+        </div>
+        <div class="explore__card">
+          <span><i class="ri-building-fill"></i></span>
+          <h4>Import Coordinator</h4>
+          <p>500+ jobs openings</p>
+        </div>
+      </div>
+      <div class="explore__btn">
+        <button class="btn">View All Categories</button>
+      </div>
+    </section>
+
+    <section class="section__container job__container" id="job">
+      <h2 class="section__header"><span>Latest & Top</span> Job Openings</h2>
+      <p class="section__description">
+        Discover Exciting New Opportunities and High-Demand Positions Available
+        Now in Top Industries and Companies
+      </p>
+
+      <div class="job__grid">
+        <!-- Job Card 1 -->
+        <div class="job__card">
+          <div class="job__card__header">
+            <img
+              src="assets/Tata.jpg"
+              alt="job"
+              style="background-size: cover"
+            />
+            <div>
+              <h5>Tata Group</h5>
+              <h6>INDIA</h6>
+            </div>
+          </div>
+          <h4>Export Coordinator</h4>
+          <p>
+            A multinational conglomerate with diverse businesses including steel
+            (Tata Steel), automobiles (Tata Motors), and IT services (Tata
+            Consultancy Services).
+          </p>
+          <div class="job__card__footer">
+            <span>12 Positions</span>
+            <span>Full Time</span>
+            <span>Rs.14,00,000/Year</span>
+          </div>
+          <!-- Apply Now Button -->
+          <button
+            class="apply-now-btn"
+            onclick="openModal('Export Coordinator - Tata Group')"
+          >
+            Apply Now
+          </button>
+        </div>
+
+        <!-- Job Card 2 -->
+        <div class="job__card">
+          <div class="job__card__header">
+            <img
+              src="assets/12.jpg"
+              alt="job"
+              style="background-size: contain"
+            />
+            <div>
+              <h5>Reliance Industries Limited</h5>
+              <h6>INDIA</h6>
+            </div>
+          </div>
+          <h4>Logistics Manager</h4>
+          <p>
+            A conglomerate with significant operations in petrochemicals,
+            refining, oil, and telecommunications.
+          </p>
+          <div class="job__card__footer">
+            <span>2 Positions</span>
+            <span>Full Time</span>
+            <span>Rs.95,000/month</span>
+          </div>
+          <!-- Apply Now Button -->
+          <button
+            class="apply-now-btn"
+            onclick="openModal('Logistics Manager - Reliance Industries Limited')"
+          >
+            Apply Now
+          </button>
+        </div>
+
+        <!-- Job Card 3 -->
+        <div class="job__card">
+          <div class="job__card__header">
+            <img src="assets/Dhl.png" alt="job" />
+            <div>
+              <h5>DHL Global Forwarding</h5>
+              <h6>Germany</h6>
+            </div>
+          </div>
+          <h4>Transport Engineer</h4>
+          <p>
+            Specializes in international freight forwarding and supply chain
+            solutions, handling air, sea, and road transport globally.
+          </p>
+          <div class="job__card__footer">
+            <span>10 Positions</span>
+            <span>Full Time</span>
+            <span>$350,000/Year</span>
+          </div>
+          <!-- Apply Now Button -->
+          <button
+            class="apply-now-btn"
+            onclick="openModal('Transport Engineer - DHL Global Forwarding')"
+          >
+            Apply Now
+          </button>
+        </div>
+
+        <!-- Job Card 4 -->
+        <div class="job__card">
+          <div class="job__card__header">
+            <img src="assets/Kuehne + Nagel.png" alt="job" />
+            <div>
+              <h5>Kuehne + Nagel</h5>
+              <h6>Switzerland</h6>
+            </div>
+          </div>
+          <h4>Warehouse Manager</h4>
+          <p>
+            A global logistics provider offering air and sea freight, customs
+            clearance, and contract logistics.
+          </p>
+          <div class="job__card__footer">
+            <span>20 Positions</span>
+            <span>Full Time</span>
+            <span>$1,01,000/Year</span>
+          </div>
+          <!-- Apply Now Button -->
+          <button
+            class="apply-now-btn"
+            onclick="openModal('Warehouse Manager - Kuehne + Nagel')"
+          >
+            Apply Now
+          </button>
+        </div>
+
+        <!-- Job Card 5 -->
+        <div class="job__card">
+          <div class="job__card__header">
+            <img src="assets/maersk.png" alt="job" />
+            <div>
+              <h5>Maersk</h5>
+              <h6>Denmark</h6>
+            </div>
+          </div>
+          <h4>Shipping Coordinator</h4>
+          <p>
+            One of the world’s largest shipping and logistics companies,
+            managing container transport and port operations worldwide.
+          </p>
+          <div class="job__card__footer">
+            <span>6 Positions</span>
+            <span>Full Time</span>
+            <span>$98,000/Year</span>
+          </div>
+          <!-- Apply Now Button -->
+          <button
+            class="apply-now-btn"
+            onclick="openModal('Shipping Coordinator - Maersk')"
+          >
+            Apply Now
+          </button>
+        </div>
+
+        <!-- Job Card 6 -->
+        <div class="job__card">
+          <div class="job__card__header">
+            <img src="assets/Expeditors.png" alt="job" />
+            <div>
+              <h5>Expeditors International</h5>
+              <h6>USA</h6>
+            </div>
+          </div>
+          <h4>International Sales Executive</h4>
+          <p>
+            A leading global logistics company specializing in customs
+            brokerage, freight forwarding, and supply chain management.
+          </p>
+          <div class="job__card__footer">
+            <span>9 Positions</span>
+            <span>Full Time</span>
+            <span>$80,000/Year</span>
+          </div>
+          <!-- Apply Now Button -->
+          <button
+            class="apply-now-btn"
+            onclick="openModal('International Sales Executive - Expeditors International')"
+          >
+            Apply Now
+          </button>
+        </div>
+      </div>
+
+      <!-- Modal for Resume Upload -->
+      <!-- Modal for Resume Upload -->
+      <div id="applyModal" class="apply-modal">
+        <div class="apply-modal-content">
+          <span class="close-btn" onclick="closeModal()">&times;</span>
+          <h3>Apply for <span id="job-title"></span></h3>
+          <form
+            action="/submit-resume"
+            method="POST"
+            enctype="multipart/form-data"
+          >
+            <label for="resume">Upload Your Resume</label>
+            <input type="file" id="resume" name="resume" required />
+            <button type="submit">Submit Application</button>
+          </form>
+          <!-- Success Message (Hidden by default) -->
+          <div id="success-message" style="display: none; color: green">
+            <p>Applied successfully! Thank you for your application.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section__container client__container" id="client">
+      <h2 class="section__header">What Our <span>Client Say</span></h2>
+      <p class="section__description">
+        Read Testimonials and Success Stories from Our Satisfied Job Seekers and
+        Employers to See How We Make a Difference
+      </p>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="client__card">
+              <img src="assets/client-1.jpg" alt="client" />
+              <p>
+                Searching for a job can be overwhelming, but this platform made
+                it simple and efficient. I uploaded my resume, applied to a few
+                positions, and soon enough, I was hired! Thank you for helping
+                me kickstart my career!
+              </p>
+              <div class="client__ratings">
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+              </div>
+              <h4>Sarah Patel</h4>
+              <h5>Logistic Manager</h5>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <img src="assets/client-2.jpg" alt="client" />
+              <p>
+                As a recent graduate, I was unsure where to start my job search.
+                This website guided me through the process step by step. From
+                creating my profile to receiving job offers, everything was
+                seamless. I'm now happily employed thanks to this platform!
+              </p>
+              <div class="client__ratings">
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-half-fill"></i></span>
+              </div>
+              <h4>Michael Brown</h4>
+              <h5>Recent Graduate</h5>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <img src="assets/client-3.jpg" alt="client" />
+              <p>
+                Creating an account was a breeze, and I was amazed by the number
+                of job opportunities available. Thanks to this website, I found
+                the perfect position that aligned perfectly with my career
+                goals.
+              </p>
+              <div class="client__ratings">
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+              </div>
+              <h4>David Smith</h4>
+              <h5>Export Manager</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="footer__logo">
+            <a href="#" class="logo">Job<span>Dekho.com</span></a>
+          </div>
+          <p>
+            Our platform is designed to help you find the perfect job and
+            achieve your professional dreams in Export-Import Industries.
+          </p>
+        </div>
+        <div class="footer__col">
+          <h4>Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Jobs</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Contact Us</h4>
+          <ul class="footer__links">
+            <li>
+              <a href="#">
+                <span><i class="ri-phone-fill"></i></span> +91 9149097992
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><i class="ri-map-pin-2-fill"></i></span> Haldwani,
+                Nainital, Uttarakhand, INDIA
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2024 Web Design Mastery. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
